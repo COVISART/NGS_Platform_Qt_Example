@@ -1,3 +1,6 @@
+# Build results
+build-[*]/*
+build-HurSim-Desktop_Qt_5_12_12_MinGW_64_bit-Debug/*
 # C++ objects and libs
 *.slo
 *.lo
