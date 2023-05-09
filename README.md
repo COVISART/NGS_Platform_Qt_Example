@@ -36,7 +36,7 @@ Motion platform comes with own control computer and all required softwares insta
 Platform software has 3 main component, all of them are installed on computer(virtual machine). When we power up computer, mmotion control envirment(TwinCAT) will startup. 
 If you are on developlment envirment, it means that it is not licensed. You can create 7 days license again and again until you complete developlemt. You can do it on TwinCAT XAE(Visual Studio with TwinCAT) [Creating trial licenses manually](https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_licensing/3510308491.html)
 
-If there is no problem, TwinCAT will start on Runtime Mode. Find [CovisartSimulatorUI]() at Desktop and run it as Administrator.
+If there is no problem, TwinCAT will start on Runtime Mode. Find [NGS System manager]() at Desktop and run it as Administrator.
 
 ![StartUp](images/StartUp.png)
 
