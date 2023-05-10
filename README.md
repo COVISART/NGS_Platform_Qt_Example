@@ -30,7 +30,8 @@ Motion platform comes with own control computer and all required softwares insta
 ### Requirments
 - Qt5 - Core, Network
 - Cmake
-
+### Start Motion Platform
+![StartUp](images/flowchart/FlowChart/Slide1.JPG)
 ### Start System
 
 Platform software has 3 main component, all of them are installed on computer(virtual machine). When we power up computer, mmotion control envirment(TwinCAT) will startup. 
@@ -80,4 +81,8 @@ Tabs:
 - Cockpit Settings - if system has cockpit, you can find all releated setting on this page
 - Setting - basic ip and port settings
 
-# For HurSim integration, open look Integration.md [Integration.md](Integration.md)
+# Working Flowchart
+![StartUp](images/flowchart/FlowChart/Slide2.JPG)
+![StartUp](images/flowchart/FlowChart/Slide3.JPG)
+
+# For HurSim integration, open Integration.md [Integration.md](Integration.md)
