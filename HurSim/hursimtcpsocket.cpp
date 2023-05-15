@@ -22,17 +22,14 @@ void HurSimTcpSocket::doConnect()
     {
         qDebug() << "Error: " << socket->errorString();
     }
-}
-void HurSimTcpSocket::connected()
-{
-    qDebug() << "connected...";
-
-    double x = 0.45;
-    double y = 0.45;
-    double z = 0.45;
 
 
-    for (int i=0; i<100;i++ ) {
+    double x = 0.0;
+    double y = 0.0;
+    double z = 0.0;
+
+    int i = 0;
+    for (int i=0; i<1000; i++) {
 
         const char* byte_x = reinterpret_cast<const char*>(&x);
         const char* byte_y = reinterpret_cast<const char*>(&y);
@@ -42,13 +39,21 @@ void HurSimTcpSocket::connected()
         payload.append(QByteArray::fromRawData(byte_y, sizeof (byte_y)));
         payload.append(QByteArray::fromRawData(byte_z, sizeof (byte_z)));
 
-        socket->write(payload);
-        x+=0.001;
-        y+=0.001;
-        z+=0.001;
-        //QThread::msleep(100);
+        socket->write(payload, payload.length());
+        socket->flush();
+        x+=0.01;
+        y+=0.01;
+        z+=0.01;
+
+        QThread::msleep(10);
     }
     socket->disconnectFromHost();
+
+}
+void HurSimTcpSocket::connected()
+{
+    qDebug() << "connected...";
+
 }
 
 void HurSimTcpSocket::disconnected()
