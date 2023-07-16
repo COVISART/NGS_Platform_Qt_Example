@@ -1,6 +1,6 @@
 # NGS-360-3 Platform Integration/Connection
 
-![NGS-360-3](images/NGS-360-3-v2.png "Optional title")
+![NGS-360-3](https://github.com/COVISART/.github/blob/main/profile/NGS-360-3-v3.png "Optional title")
 
 [![GitHub](https://img.shields.io/github/license/COVISART/NGS_Platform_Qt_Example?color=orange&style=for-the-badge)](https://github.com/COVISART/NGS_Platform_Qt_Example)
 
